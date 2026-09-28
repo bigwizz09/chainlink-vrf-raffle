@@ -4,7 +4,9 @@ out = "out"
 libs = ["lib"]
 remappings = [
     "@chainlink/=lib/chainlink-evm/contracts/",
-    "@openzeppelin/=lib/openzeppelin-contracts/"
+    
+    "@openzeppelin/contracts@4.8.3/=lib/openzeppelin-contracts/contracts/",
+    "@openzeppelin/contracts@4.9.6/=lib/openzeppelin-contracts/contracts/"
 ]
 fs_permissions = [
     { access = "read", path = "./broadcast" },
